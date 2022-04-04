@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Order summary card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bright-blue': '#3829E0',
+            'dark-blue': '#1F2F56',
+            'pale-blue': '#E0E8FF',
+            'desaturated-blue': '#7280A7',
+            'very-pale-blue': '#F5F7FF'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Red Hat Display', sans-serif;   
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }    
+  </style>
+</head>
+<body>
+  <div class="flex items-center justify-center min-h-screen bg-[#E0E8FF] bg-[url('/images/pattern-background-mobile.svg')]  md:bg-[url('/images/pattern-background-desktop.svg')] bg-no-repeat" >
+  
+    <form class="mx-8 max-w-[375px] flex flex-col items-center text-center ">
+      <img class="rounded-t-2xl" src="/images/illustration-hero.svg" alt="Girl listening to music, dancing around happily.">
+
+      <div class="p-8 bg-white rounded-b-2xl shadow-md text-base">
+        <h1 class="text-xl font-black text-dark-blue inline-block mb-4">Order Summary</h1>
+        <p class="text-desaturated-blue mb-6">You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
+        <section class="flex py-2 justify-between items-center bg-very-pale-blue p-4 mb-6 rounded-lg">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg>
+            <ul class="ml-4 text-left">
+              <li class="text-sm font-bold text-dark-blue">Annual Plan</li>
+              <li class="text-xs text-desaturated-blue">$59.99/year</li>
+            </ul>
+          </div>
+
+          <button class="text-xs underline font-bold text-bright-blue hover:text-bright-blue/90 active:no-underline hover:no-underline">Change</button>
+        </section>
+  
+        <div class="flex flex-col gap-4 text-sm ">
+          <button class="bg-[#3829E0] text-white w-full py-4 font-bold rounded-lg shadow-xl hover:bg-bright-blue/90 hover:blue-500">Proceed to Payment</button>
+          <button class="text-[#7280a7] font-bold hover:text-dark-blue active:text-dark-blue">Cancel Order</button>
+        </div>
+      </div>
+    </form>
+    <div class="attribution fixed bottom-16">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jonashr">Jonashr</a>.
+    </div>
+  </div>
+
+</body>
+</html>
