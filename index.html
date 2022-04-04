@@ -19,6 +19,11 @@
             'pale-blue': '#E0E8FF',
             'desaturated-blue': '#7280A7',
             'very-pale-blue': '#F5F7FF'
+          },
+          backgroundImage: {
+            'pattern-background-mobile': "url('/images/pattern-background-mobile.svg')",
+            'pattern-background-desktop': "url('/images/pattern-background-desktop.svg')"
+
           }
         }
       }
@@ -33,7 +38,7 @@
   </style>
 </head>
 <body>
-  <div class="flex items-center justify-center min-h-screen bg-[#E0E8FF] bg-[url('/images/pattern-background-mobile.svg')]  md:bg-[url('/images/pattern-background-desktop.svg')] bg-no-repeat" >
+  <div class="flex items-center justify-center min-h-screen bg-[#E0E8FF] bg-pattern-background-mobile  md:bg-pattern-background-desktop bg-no-repeat" >
   
     <form class="mx-8 max-w-[375px] flex flex-col items-center text-center ">
       <img class="rounded-t-2xl" src="./images/illustration-hero.svg" alt="Girl listening to music, dancing around happily.">
